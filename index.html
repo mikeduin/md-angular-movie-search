@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="searchApp" ng-controller="mainController">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css" media="screen" charset="utf-8">
+  </head>
+  <body class='container'>
+    <h1 class='row col-md-12 text-center header'> Angular OMDb API Search </h1>
+    <br>
+    <h3 class='row col-md-12 text-center'> Enter a movie by title. </h3>
+    <br>
+    <form name="searchForm" method="post" ng-submit="formSubmit(movie)">
+      <input class='row col-md-4 col-md-offset-4' type="text" ng-model="movie.title" placeholder="movie title e.g. 'The Rock'">
+      <button class="row col-md-2 col-md-offset-5 btn btn-primary" type="submit"> Search! </button>
+    </form>
+    <hr class='row col-md-12'>
+
+    <div ng-view>
+      
+    </div>
+
+
+
+
+    <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'>
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap.js'>
+    </script>
+    <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/controllers.js" charset="utf-8"></script>
+  </body>
+</html>

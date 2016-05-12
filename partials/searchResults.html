@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="searchApp" ng-controller="resultsController">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="container">
+    <a class="row col-md-5 resultBox" ng-repeat='result in searchResults' href='#/{{result.imdbID}}/show'>
+      <p class="movieTitle">
+        Title: {{result.Title}}
+      </p>
+      <p class="movieYear">
+        Year: {{result.Year}}
+      </p>
+      <p class="movieYear">
+        {{result.Type}}
+      </p>
+    </a>
+
+
+
+  </body>
+</html>

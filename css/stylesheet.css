@@ -1,0 +1,73 @@
+form button {
+  margin-top: 20px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.resultBox {
+  height: 110px;
+  border: 5px solid #C1D9EB;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+
+.movieTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+  color: #337AB7;
+}
+
+.movieYear {
+  margin-top: -10px;
+  font-style: italic;
+}
+
+.showMovie {
+  border: 5px solid #C1D9EB;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+
+.showTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+img {
+  max-height: 200px;
+}
+
+starring {
+  font-weight: bold;
+  color: silver;
+}
+
+plot p {
+  margin-top: 10px;
+}
+
+addDetails {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+movieInfo div {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.detailInfo {
+  color: #BBB9BB;
+  font-size: 14px;
+}

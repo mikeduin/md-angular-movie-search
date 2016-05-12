@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="searchApp" ng-controller="showController">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="container">
+    <showMovie class="col-md-8 col-md-offset-2 showMovie">
+      <movieTitle class="row col-md-12 showTitle"> {{movie.title}} </movieTitle>
+      <div class="row">
+        <moviePoster class="col-md-3">
+          <img class = "image" ng-src= "{{movie.poster}}" />
+        </moviePoster>
+        <movieInfo class="col-md-9">
+          <starring>
+            <span style="color: black; font-style: italic"> Starring: </span>
+             {{movie.starring}}
+          </starring>
+          <plot>
+            <p>
+              {{movie.plot}}
+            </p>
+          </plot>
+          <addDetails>
+            Additional Details
+          </addDetails>
+          <div class="details"> Awards
+            <p class="detailInfo"> {{movie.awards}} </p> </div>
+          <div class="details"> Country
+            <p class="detailInfo"> {{movie.country}} </p> </div>
+          <div class="details"> Director
+            <p class="detailInfo"> {{movie.director}} </p> </div>
+          <div class="details"> Genre
+            <p class="detailInfo"> {{movie.genre}} </p> </div>
+          <div class="details"> Language
+            <p class="detailInfo"> {{movie.language}} </p> </div>
+          <div class="details"> Metascore
+            <p class="detailInfo"> {{movie.metascore}} </p> </div>
+          <div class="details"> Rated
+            <p class="detailInfo"> {{movie.rated}} </p> </div>
+          <div class="details"> Released
+            <p class="detailInfo"> {{movie.released}} </p> </div>
+          <div class="details"> Runtime
+            <p class="detailInfo"> {{movie.runtime}} </p> </div>
+          <div class="details"> Writer
+            <p class="detailInfo"> {{movie.writers}} </p> </div>
+          <div class="details"> Year
+            <p class="detailInfo"> {{movie.year}} </p> </div>
+          <div class="details"> imdb Rating
+            <p class="detailInfo"> {{movie.imdbRating}} </p> </div>
+          <div class="details"> imdb Votes
+            <p class="detailInfo"> {{movie.imdbVotes}} </p> </div>
+        </movieInfo>
+      </div>
+
+    </showMovie>
+
+
+
+  </body>
+</html>
